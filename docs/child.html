@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ベイブレードX パーツけいさんき</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ベイブレードX パーツけいさんき</h1>
+
+    <div class="tabs">
+        <button class="tab-button active" data-tab="blade">ブレード</button>
+        <button class="tab-button" data-tab="ratchet">ラチェット</button>
+        <button class="tab-button" data-tab="bits">ビット</button>
+    </div>
+
+    <div id="blade" class="tab-content active">
+        <h2>ブレード</h2>
+        <table id="bladeTable">
+            <thead>
+                <tr>
+                    <th data-sort-key="name">なまえ <span class="sort-arrow"></span></th>
+                    <th data-sort-key="height">たかさ <span class="sort-arrow"></span></th>
+                    <th data-sort-key="weight">おもさ <span class="sort-arrow"></span></th>
+                    <th>じょうほう</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <div id="ratchet" class="tab-content">
+        <h2>ラチェット</h2>
+        <table id="ratchetTable">
+            <thead>
+                <tr>
+                    <th data-sort-key="name">なまえ <span class="sort-arrow"></span></th>
+                    <th data-sort-key="tooth">はのかず <span class="sort-arrow"></span></th>
+                    <th data-sort-key="height">たかさ <span class="sort-arrow"></span></th>
+                    <th data-sort-key="weight">おもさ <span class="sort-arrow"></span></th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <div id="bits" class="tab-content">
+        <h2>ビット</h2>
+        <table id="bitsTable">
+            <thead>
+                <tr>
+                    <th data-sort-key="name">なまえ <span class="sort-arrow"></span></th>
+                    <th data-sort-key="tooth">はのかず <span class="sort-arrow"></span></th>
+                    <th data-sort-key="burst_resistance">バーストたいせい <span class="sort-arrow"></span></th>
+                    <th data-sort-key="height">たかさ <span class="sort-arrow"></span></th>
+                    <th data-sort-key="exposure_height">ろしゅつたかさ <span class="sort-arrow"></span></th>
+                    <th data-sort-key="weight">おもさ <span class="sort-arrow"></span></th>
+                    <th>じょうほう</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <div id="selectionResultsContainer" class="selection-results-container hidden">
+        <button id="toggleSelectionResults" class="toggle-button">◀︎</button>
+        <div class="selection-results-content">
+            <h2>パーツのデータ</h2>
+            <p>ブレード: <span id="selectedBlade">----</span></p>
+            <p>ラチェット: <span id="selectedRatchet">----</span></p>
+            <p>ビット: <span id="selectedBit">----</span></p>
+            <p><strong>バーストたいせい: <span id="totalBurstResistance">0</span></strong></p>
+            <p><strong>ラチェットのはのかず: <span id="ratchetToothCount">0</span></strong></p>
+            <p><strong>ビットのはのかず: <span id="bitToothCount">0</span></strong></p>
+            <p><strong>ぜんたいのおもさ: <span id="totalWeight">0.0</span>g</strong></p>
+            <p><strong>ぜんたいのたかさ: <span id="totalHeight">0.0</span>mm</strong></p>
+            <button id="resetSelection">リセット</button>
+        </div>
+    </div>
+
+    <script src="child.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+body {
+    font-family: sans-serif;
+    margin: 16px;
+    background-color: #f4f4f4;
+    color: #333;
+    /* 変更点: body にも相対位置指定が必要な場合がある（今回は直接は影響しないが、固定要素との関連で覚えておく） */
+    position: relative;
+    min-height: 100vh; /* 画面高さ全体をカバー */
+    font-size:12px;
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+    font-size:16px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.tab-button {
+    padding:4px 16px;
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0 5px;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #d0d0d0;
+}
+
+.tab-button.active {
+    background-color: #007bff;
+    color: white;
+    border-bottom: 3px solid #0056b3;
+}
+
+.tab-content {
+    display: none;
+    background-color: #fff;
+    padding:16px;
+    border-radius:8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+h2 {
+    color: #007bff;
+    margin: 0;
+    font-size:14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top:0px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #e2e6ea;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+th:hover {
+    background-color: #d1d6db;
+}
+
+.sort-arrow {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    vertical-align: middle;
+}
+
+th.asc .sort-arrow {
+    border-bottom: 5px solid #333;
+}
+
+th.desc .sort-arrow {
+    border-top: 5px solid #333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+tbody tr.selected {
+    background-color: #cce5ff;
+    font-weight: bold;
+}
+
+/* 変更点: selection-results-container のスタイル */
+.selection-results-container {
+    position: fixed; /* 画面に固定 */
+    bottom: 20px;    /* 下から20px */
+    right: 20px;     /* 右から20px */
+    z-index: 1000;   /* 他の要素の上に表示 */
+    display: flex;   /* ボタンと内容を横並びにするため */
+    transition: transform 0.3s ease-in-out; /* スライドアニメーション */
+}
+
+/* 非表示時の状態 */
+.selection-results-container.hidden {
+    transform: translateX(calc(100% - 40px)); /* ボタン幅を考慮して非表示 */
+}
+
+.selection-results-content {
+    padding:16px;
+    background-color: #e6f7ff;
+    border: 1px solid #99e6ff;
+    border-radius:0px 8px 8px 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    min-width: 250px; /* ある程度の幅を確保 */
+}
+
+.selection-results-content p {
+    margin: 5px 0;
+}
+
+.selection-results-content strong {
+    color: #0056b3;
+    font-size: 1.1em;
+}
+
+#resetSelection {
+    padding: 8px 15px;
+    margin-top: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#resetSelection:hover {
+    background-color: #c82333;
+}
+
+/* 変更点: トグルボタンのスタイル */
+.toggle-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 8px 0 0 8px; /* 左側にだけ丸み */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    height: fit-content; /* 内容に合わせた高さ */
+    align-self: top; /* 中央揃え */
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}

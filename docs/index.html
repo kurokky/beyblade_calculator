@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ベイブレードX パーツ計算機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ベイブレードX パーツ計算機</h1>
+
+    <div class="tabs">
+        <button class="tab-button active" data-tab="blade">ブレード</button>
+        <button class="tab-button" data-tab="ratchet">ラチェット</button>
+        <button class="tab-button" data-tab="bits">ビット</button>
+    </div>
+
+    <div id="blade" class="tab-content active">
+        <h2>ブレード</h2>
+        <table id="bladeTable">
+            <thead>
+                <tr>
+                    <th data-sort-key="name">名前 <span class="sort-arrow"></span></th>
+                    <th data-sort-key="height">高さ <span class="sort-arrow"></span></th>
+                    <th data-sort-key="weight">重さ <span class="sort-arrow"></span></th>
+                    <th>注釈</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <div id="ratchet" class="tab-content">
+        <h2>ラチェット</h2>
+        <table id="ratchetTable">
+            <thead>
+                <tr>
+                    <th data-sort-key="name">名前 <span class="sort-arrow"></span></th>
+                    <th data-sort-key="tooth">歯数 <span class="sort-arrow"></span></th>
+                    <th data-sort-key="height">高さ <span class="sort-arrow"></span></th>
+                    <th data-sort-key="weight">重さ <span class="sort-arrow"></span></th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <div id="bits" class="tab-content">
+        <h2>ビット</h2>
+        <table id="bitsTable">
+            <thead>
+                <tr>
+                    <th data-sort-key="name">名前 <span class="sort-arrow"></span></th>
+                    <th data-sort-key="tooth">歯数 <span class="sort-arrow"></span></th>
+                    <th data-sort-key="burst_resistance">バースト耐性 <span class="sort-arrow"></span></th>
+                    <th data-sort-key="height">高さ <span class="sort-arrow"></span></th>
+                    <th data-sort-key="exposure_height">露出高さ <span class="sort-arrow"></span></th>
+                    <th data-sort-key="weight">重さ <span class="sort-arrow"></span></th>
+                    <th>注釈</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <div id="selectionResultsContainer" class="selection-results-container hidden">
+        <button id="toggleSelectionResults" class="toggle-button">◀︎</button>
+        <div class="selection-results-content">
+            <h2>選択されたパーツと総合計</h2>
+            <p>ブレード: <span id="selectedBlade">----</span></p>
+            <p>ラチェット: <span id="selectedRatchet">----</span></p>
+            <p>ビット: <span id="selectedBit">----</span></p>
+            <p><strong>バースト耐性: <span id="totalBurstResistance">0</span></strong></p>
+            <p><strong>ラチェット歯数: <span id="ratchetToothCount">0</span></strong></p>
+            <p><strong>ビット歯数: <span id="bitToothCount">0</span></strong></p>
+            <p><strong>合計重量: <span id="totalWeight">0.0</span>g</strong></p>
+            <p><strong>合計高さ: <span id="totalHeight">0.0</span>mm</strong></p>
+            <button id="resetSelection">リセット</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
