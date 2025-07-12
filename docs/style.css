@@ -144,7 +144,7 @@ tbody tr.selected {
 
 .selection-results-content strong {
     color: #0056b3;
-    font-size: 1.1em;
+    font-size:12px;
 }
 
 #resetSelection {
@@ -167,7 +167,7 @@ tbody tr.selected {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 8px 10px;
     cursor: pointer;
     font-size: 1.2em;
     border-radius: 8px 0 0 8px; /* 左側にだけ丸み */

@@ -1,17 +1,22 @@
-const blade_data = [{"name": "スコーピオスピア","height": 50.5,"weight": 39.6},{"name": "インパクトドレイク","height": 51,"weight": 38.8},{"name": "エアロペガサス","height": 51,"weight": 38.2},{"name": "ホエールウェーブ","height": 50,"weight": 38},{"name": "フェニックスウイング","height": 49.5,"weight": 37.9},{"name": "コバルトドレイク","height": 48,"weight": 37.7},{"name": "コバルトドラグーン","height": 50.5,"weight": 37.7},{"name": "ティラノビート","height": 49,"weight": 37},{"name": "シルバーウルフ","height": 49,"weight": 36.9},{"name": "ナイトメイル","height": 48,"weight": 36.6},{"name": "ドランバスター","height": 49,"weight": 36.5},{"name": "トリケラプレス","height": 49,"weight": 36.4},{"name": "サムライセイバー","height": 50,"weight": 36.4,"annotation": "収納時49.0"},{"name": "オプティマスプライマル","height": 49.5,"weight": 35.6},{"name": "ウィザードロッド","height": 50.5,"weight": 35.4},{"name": "クリムゾンガルーダ","height": 49,"weight": 35.1},{"name": "レオンクレスト","height": 49,"weight": 35},{"name": "ドランダガー","height": 48,"weight": 34.9},{"name": "ドランソード","height": 48.5,"weight": 34.8},{"name": "ヴァイスタイガー","height": 48.5,"weight": 34.7},{"name": "フェニックスラダー","height": 48.5,"weight": 34.7},{"name": "ヴァイパーテイル","height": 48.5,"weight": 34.6},{"name": "シャークエッジ","height": 49,"weight": 34.5},{"name": "プテラスイング","height": 49,"weight": 34.4},{"name": "ヴェノム","height": 49,"weight": 34.2},{"name": "ライトニングエルドラゴ（アッパー型）","height": 48.5,"weight": 33.8},{"name": "クロコランチ","height": 48.5,"weight": 33.8},{"name": "アイアンマン","height": 48.5,"weight": 33.7},{"name": "ビクトリーヴァルキリー","height": 49,"weight": 33.4},{"name": "ライトニングエルドラゴ（連打型）","height": 48.5,"weight": 33.3},{"name": "ヘルズチェイン","height": 48,"weight": 33.2},{"name": "ユニコーンスティング","height": 48,"weight": 33.2},{"name": "ヘルズハンマー","height": 48,"weight": 33.2},{"name": "フェニックスフェザー","height": 48.5,"weight": 33.2},{"name": "スパイダーマン","height": 49,"weight": 33.1},{"name": "オプティマスプライム","height": 48.5,"weight": 33},{"name": "ナイトランス","height": 47.5,"weight": 32.9},{"name": "ライノホーン","height": 45.5,"weight": 32.8},{"name": "ヘルズサイズ","height": 48,"weight": 32.7},{"name": "スフィンクスカウル","height": 48,"weight": 32.6},{"name": "シェルタードレイク","height": 50,"weight": 32.6},{"name": "ブラックシェル","height": 48.5,"weight": 32.4},{"name": "マンモスタスク","height": 48.5,"weight": 32.4},{"name": "ナイトシールド","height": 48,"weight": 32.3},{"name": "ウィザードアロー","height": 48,"weight": 32},{"name": "ワイバーンゲイル","height": 48,"weight": 32},{"name": "メガトロン","height": 48.5,"weight": 31.5},{"name": "レオンクロー","height": 49,"weight": 31.5},{"name": "ルーク・スカイウォーカー","height": 48.5,"weight": 31.4},{"name": "ストームペガシス","height": 48.5,"weight": 31.2},{"name": "シノビナイフ","height": 45.5,"weight": 31},{"name": "モフ・ギデオン","height": 48.5,"weight": 31},{"name": "ダース・ベイダー","height": 48,"weight": 30.8},{"name": "マンダロリアン","height": 49,"weight": 30.8},{"name": "ゼノエクスカリバー","height": 49.5,"weight": 30.8},{"name": "ベアスクラッチ","height": 45.5,"weight": 30.2},{"name": "スタースクリーム","height": 48.5,"weight": 30.2},{"name": "サノス","height": 48.5,"weight": 29.2},{"name": "ドライガースラッシュ","height": 49,"weight": 28.6},{"name": "ドラシエルシールド","height": 50,"weight": 28.2},{"name": "シノビシャドウ","height": 48.5,"weight": 28.1},{"name": "ドランザースパイラル","height": 48.5,"weight": 27.8},{"name": "ゴーストサークル","height": 45,"weight": 26.6},{"name": "ドラグーンストーム","height": 49,"weight": 25.1}]
+const blade_data = [{"name":"アイアンマン","type":"D","size":48.5,"weight":33.7,"turn":"L"},{"name":"インパクトドレイク","type":"A","size":51.0,"weight":38.8,"turn":"L"},{"name":"ヴァイスタイガー","type":"B","size":48.5,"weight":34.7,"turn":"L"},{"name":"ヴァイパーテイル","type":"S","size":48.5,"weight":34.6,"turn":"L"},{"name":"ウィザードアロー","type":"S","size":48.0,"weight":32.0,"turn":"L"},{"name":"ウィザードロッド","type":"S","size":50.5,"weight":35.4,"turn":"L"},{"name":"ヴェノム","type":"A","size":49.0,"weight":34.2,"turn":"L"},{"name":"エアロペガサス","type":"A","size":51.0,"weight":38.2,"turn":"L"},{"name":"オプティマスプライマル","type":"A","size":49.5,"weight":35.6,"turn":"L"},{"name":"オプティマスプライム","type":"D","size":48.5,"weight":33.0,"turn":"L"},{"name":"クリムゾンガルーダ","type":"B","size":49.0,"weight":35.1,"turn":"L"},{"name":"クロコランチ","type":"A","size":48.5,"weight":33.8,"turn":"L"},{"name":"ゴーストサークル","type":"S","size":45.0,"weight":26.6,"turn":"L"},{"name":"コバルトドラグーン","type":"A","size":50.5,"weight":37.7,"turn":"R"},{"name":"コバルトドレイク","type":"A","size":48.0,"weight":37.7,"turn":"L"},{"name":"サノス","type":"D","size":48.5,"weight":29.2,"turn":"L"},{"name":"サムライセイバー","type":"A","size":50.0,"weight":36.4,"turn":"L","annotation":"収納時49.0"},{"name":"シェルタードレイク","type":"B","size":50.0,"weight":32.6,"turn":"L"},{"name":"シノビシャドウ","type":"D","size":48.5,"weight":28.1,"turn":"L"},{"name":"シノビナイフ","type":"D","size":45.5,"weight":31.0,"turn":"L"},{"name":"シャークエッジ","type":"A","size":49.0,"weight":34.5,"turn":"L"},{"name":"シルバーウルフ","type":"S","size":49.0,"weight":36.9,"turn":"L"},{"name":"スコーピオスピア","type":"D","size":50.5,"weight":39.6,"turn":"L"},{"name":"スタースクリーム","type":"S","size":48.5,"weight":30.2,"turn":"L"},{"name":"ストームペガシス","type":"A","size":48.5,"weight":31.2,"turn":"L"},{"name":"スパイダーマン","type":"S","size":49.0,"weight":33.1,"turn":"L"},{"name":"スフィンクスカウル","type":"D","size":48.0,"weight":32.6,"turn":"L"},{"name":"ゼノエクスカリバー","type":"A","size":49.5,"weight":30.8,"turn":"L"},{"name":"ダース・ベイダー","type":"D","size":48.0,"weight":30.8,"turn":"L"},{"name":"ティラノビート","type":"A","size":49.0,"weight":37.0,"turn":"L"},{"name":"ドライガースラッシュ","type":"B","size":49.0,"weight":28.6,"turn":"L"},{"name":"ドラグーンストーム","type":"A","size":49.0,"weight":25.1,"turn":"R"},{"name":"ドラシエルシールド","type":"S","size":50.0,"weight":28.2,"turn":"L"},{"name":"ドランザースパイラル","type":"B","size":48.5,"weight":27.8,"turn":"L"},{"name":"ドランソード","type":"A","size":48.5,"weight":34.8,"turn":"L"},{"name":"ドランダガー","type":"A","size":48.0,"weight":34.9,"turn":"L"},{"name":"ドランバスター","type":"A","size":49.0,"weight":36.5,"turn":"L"},{"name":"トリケラプレス","type":"D","size":49.0,"weight":36.4,"turn":"L"},{"name":"ナイトシールド","type":"D","size":48.0,"weight":32.3,"turn":"L"},{"name":"ナイトメイル","type":"D","size":48.0,"weight":36.6,"turn":"L"},{"name":"ナイトランス","type":"D","size":47.5,"weight":32.9,"turn":"L"},{"name":"ビクトリーヴァルキリー","type":"A","size":49.0,"weight":33.4,"turn":"L"},{"name":"フェニックスウイング","type":"A","size":49.5,"weight":37.9,"turn":"L"},{"name":"フェニックスフェザー","type":"A","size":48.5,"weight":33.2,"turn":"L"},{"name":"フェニックスラダー","type":"S","size":48.5,"weight":34.7,"turn":"L"},{"name":"プテラスイング","type":"S","size":49.0,"weight":34.4,"turn":"L"},{"name":"ブラックシェル","type":"D","size":48.5,"weight":32.4,"turn":"L"},{"name":"ベアスクラッチ","type":"D","size":45.5,"weight":30.2,"turn":"L"},{"name":"ヘルズサイズ","type":"B","size":48.0,"weight":32.7,"turn":"L"},{"name":"ヘルズチェイン","type":"B","size":48.0,"weight":33.2,"turn":"L"},{"name":"ヘルズハンマー","type":"B","size":48.0,"weight":33.2,"turn":"L"},{"name":"ホエールウェーブ","type":"B","size":50.0,"weight":38.0,"turn":"L"},{"name":"マンダロリアン","type":"A","size":49.0,"weight":30.8,"turn":"L"},{"name":"マンモスタスク","type":"B","size":48.5,"weight":32.4,"turn":"L"},{"name":"メガトロン","type":"B","size":48.5,"weight":31.5,"turn":"L"},{"name":"モフ・ギデオン","type":"B","size":48.5,"weight":31.0,"turn":"L"},{"name":"ユニコーンスティング","type":"B","size":48.0,"weight":33.2,"turn":"L"},{"name":"ライトニングエルドラゴ（アッパー型）","type":"A","size":48.5,"weight":33.8,"turn":"R"},{"name":"ライトニングエルドラゴ（連打型）","type":"A","size":48.5,"weight":33.3,"turn":"R"},{"name":"ライノホーン","type":"D","size":45.5,"weight":32.8,"turn":"L"},{"name":"ルーク・スカイウォーカー","type":"D","size":48.5,"weight":31.4,"turn":"L"},{"name":"レオンクレスト","type":"D","size":49.0,"weight":35.0,"turn":"L"},{"name":"レオンクロー","type":"B","size":49.0,"weight":31.5,"turn":"L"},{"name":"ワイバーンゲイル","type":"S","size":48.0,"weight":32.0,"turn":"L"},{"name":"ゴーレムロック","type":"D","size":50.0,"weight":33.9,"turn":"L"}];
 const ratchet_data = [{"name": "0-70","tooth": 0,"height": 70,"weight": 7},{"name": "0-80","tooth": 0,"height": 80,"weight": 7.6},{"name": "1-60","tooth": 1,"height": 60,"weight": 5.9},{"name": "1-80","tooth": 1,"height": 80,"weight": 6.7},{"name": "2-60","tooth": 2,"height": 60,"weight": 6.2},{"name": "2-70","tooth": 2,"height": 70,"weight": 6.3},{"name": "2-80","tooth": 2,"height": 80,"weight": 6.9},{"name": "3-60","tooth": 3,"height": 60,"weight": 6.3},{"name": "3-70","tooth": 3,"height": 70,"weight": 6.4},{"name": "3-80","tooth": 3,"height": 80,"weight": 6.9},{"name": "3-85","tooth": 3,"height": 85,"weight": 4.8},{"name": "4-55","tooth": 4,"height": 55,"weight": 4.8},{"name": "4-60","tooth": 4,"height": 60,"weight": 6.3},{"name": "4-70","tooth": 4,"height": 70,"weight": 6.5},{"name": "4-80","tooth": 4,"height": 80,"weight": 6.9},{"name": "5-60","tooth": 5,"height": 60,"weight": 6.6},{"name": "5-70","tooth": 5,"height": 70,"weight": 6.7},{"name": "5-80","tooth": 5,"height": 80,"weight": 7.1},{"name": "6-60","tooth": 6,"height": 60,"weight": 6.2},{"name": "6-80","tooth": 6,"height": 80,"weight": 6.9},{"name": "7-60","tooth": 7,"height": 60,"weight": 7.2},{"name": "7-70","tooth": 7,"height": 70,"weight": 7.3},{"name": "7-80","tooth": 7,"height": 80,"weight": 7.8},{"name": "9-60","tooth": 9,"height": 60,"weight": 6.2},{"name": "9-70","tooth": 9,"height": 70,"weight": 6.3},{"name": "9-80","tooth": 9,"height": 80,"weight": 6.9},{"name": "M-85","tooth": 5,"height": 85,"weight": 10.8}]
-const bits_data = [{"name": "FB（フリーボール）","tooth": 12,"burst_resistance": 30,"height": 29.7,"exposure_height": 12.3,"weight": 1.9},{"name": "UN（アンダーニードル）","tooth": 12,"burst_resistance": 30,"height": 27.5,"exposure_height": 10.2,"weight": 1.9},{"name": "LO（ローオーブ）","tooth": 12,"burst_resistance": 30,"height": 28.5,"exposure_height": 11.2,"weight": 1.9},{"name": "W（ウェッジ）","tooth": 10,"burst_resistance": 30,"height": 29.7,"exposure_height": 12.7,"weight": 1.9},{"name": "N（ニードル）","tooth": 12,"burst_resistance": 30,"height": 29.4,"exposure_height": 12.3,"weight": 2},{"name": "O（オーブ）","tooth": 12,"burst_resistance": 30,"height": 29.8,"exposure_height": 12.3,"weight": 2},{"name": "S（スパイク）","tooth": 12,"burst_resistance": 30,"height": 29.8,"exposure_height": 12.3,"weight": 2},{"name": "GN（ギヤニードル）","tooth": 12,"burst_resistance": 30,"height": 29.4,"exposure_height": 12,"weight": 2},{"name": "D（ドット）","tooth": 12,"burst_resistance": 30,"height": 29.8,"exposure_height": 12.3,"weight": 2},{"name": "BS（バウンドスパイク）","tooth": 12,"burst_resistance": 30,"height": 29.6,"exposure_height": 13.6,"weight": 2,"annotation":"収縮時12.3"},{"name": "B（ボール）","tooth": 12,"burst_resistance": 30,"height": 29.8,"exposure_height": 12.4,"weight": 2.1},{"name": "GB（ギヤボール）","tooth": 12,"burst_resistance": 30,"height": 29.7,"exposure_height": 12.3,"weight": 2.1},{"name": "HN（ハイニードル）","tooth": 12,"burst_resistance": 30,"height": 30.7,"exposure_height": 13.3,"weight": 2.2},{"name": "G（グライド）","tooth": 16,"burst_resistance": 30,"height": 30.2,"exposure_height": 12.4,"weight": 2.6},{"name": "MN（メタルニードル）","tooth": 12,"burst_resistance": 30,"height": 29.7,"exposure_height": 12.4,"weight": 2.8},{"name": "DB（ディスクボール）","tooth": 12,"burst_resistance": 30,"height": 31.9,"exposure_height": 14.6,"weight": 3.2},{"name": "E（エレベート）","tooth": 12,"burst_resistance": 30,"height": 29,"exposure_height": 11.8,"weight": 3.2},{"name": "LR（ローラッシュ）","tooth": 10,"burst_resistance": 80,"height": 28.7,"exposure_height": 11.3,"weight": 1.9},{"name": "R（ラッシュ）","tooth": 10,"burst_resistance": 80,"height": 29.7,"exposure_height": 12.3,"weight": 2.1},{"name": "U（ユナイト）","tooth": 12,"burst_resistance": 80,"height": 29.3,"exposure_height": 12.3,"weight": 2.1},{"name": "V（ボルテックス）","tooth": 12,"burst_resistance": 80,"height": 29.4,"exposure_height": 12.3,"weight": 2.1},{"name": "GR（ギヤラッシュ）","tooth": 10,"burst_resistance": 80,"height": 29.7,"exposure_height": 12.3,"weight": 2.1},{"name": "F（フラット）","tooth": 12,"burst_resistance": 80,"height": 29.7,"exposure_height": 12.3,"weight": 2.2},{"name": "T（テーパー）","tooth": 12,"burst_resistance": 80,"height": 29.7,"exposure_height": 12.3,"weight": 2.2},{"name": "LF（ローフラット）","tooth": 12,"burst_resistance": 80,"height": 28.7,"exposure_height": 11.3,"weight": 2.2},{"name": "P（ポイント）","tooth": 12,"burst_resistance": 80,"height": 29.8,"exposure_height": 12.4,"weight": 2.2},{"name": "Q（クエイク）","tooth": 12,"burst_resistance": 80,"height": 29.6,"exposure_height": 12.3,"weight": 2.2},{"name": "C（サイクロン）","tooth": 12,"burst_resistance": 80,"height": 29.8,"exposure_height": 12.3,"weight": 2.2},{"name": "TP（トランスポイント）","tooth": 12,"burst_resistance": 80,"height": 28.6,"exposure_height": 11.5,"weight": 2.2,"annotation": "延長時13.0"},{"name": "K（キック）","tooth": 12,"burst_resistance": 80,"height": 29.6,"exposure_height": 12.5,"weight": 2.2},{"name": "HT（ハイテーパー）","tooth": 12,"burst_resistance": 80,"height": 30.6,"exposure_height": 13.3,"weight": 2.3},{"name": "GF（ギヤフラット）","tooth": 12,"burst_resistance": 80,"height": 29.6,"exposure_height": 12.3,"weight": 2.3},{"name": "GP（ギヤポイント）","tooth": 12,"burst_resistance": 80,"height": 30,"exposure_height": 12.4,"weight": 2.3},{"name": "Z（ザップ）","tooth": 16,"burst_resistance": 80,"height": 28.8,"exposure_height": 11.5,"weight": 2.5},{"name": "A（アクセル）","tooth": 16,"burst_resistance": 80,"height": 29.6,"exposure_height": 12.2,"weight": 2.6},{"name": "H（ヘキサ）","tooth": 16,"burst_resistance": 80,"height": 29.4,"exposure_height": 12.2,"weight": 2.6},{"name": "L（レベル）","tooth": 16,"burst_resistance": 80,"height": 29.5,"exposure_height": 12.5,"weight": 2.6},{"name": "RA（ラバーアクセル）","tooth": 16,"burst_resistance": 80,"height": 30,"exposure_height": 12.3,"weight": 3.1}]
+const bits_data = [{"name": "A（アクセル）","type": "A","tooth": 16,"burst": 80,"height": 29.6,"exposure_height": 12.2,"weight": 2.6},{"name": "B（ボール）","type": "S","tooth": 12,"burst": 30,"height": 29.8,"exposure_height": 12.4,"weight": 2.1},{"name": "BS（バウンドスパイク）","type": "D","tooth": 12,"burst": 30,"height": 29.6,"exposure_height": 13.6,"weight": 2,"annotation": "収縮時12.3"},{"name": "C（サイクロン）","type": "A","tooth": 12,"burst": 80,"height": 29.8,"exposure_height": 12.3,"weight": 2.2},{"name": "D（ドット）","type": "D","tooth": 12,"burst": 30,"height": 29.8,"exposure_height": 12.3,"weight": 2},{"name": "DB（ディスクボール）","type": "S","tooth": 12,"burst": 30,"height": 31.9,"exposure_height": 14.6,"weight": 3.2},{"name": "E（エレベート）","type": "B","tooth": 12,"burst": 30,"height": 29,"exposure_height": 11.8,"weight": 3.2},{"name": "F（フラット）","type": "A","tooth": 12,"burst": 80,"height": 29.7,"exposure_height": 12.3,"weight": 2.2},{"name": "FB（フリーボール）","type": "S","tooth": 12,"burst": 30,"height": 29.7,"exposure_height": 12.3,"weight": 1.9},{"name": "G（グライド）","type": "S","tooth": 16,"burst": 30,"height": 30.2,"exposure_height": 12.4,"weight": 2.6},{"name": "GB（ギヤボール）","type": "S","tooth": 12,"burst": 30,"height": 29.7,"exposure_height": 12.3,"weight": 2.1},{"name": "GF（ギヤフラット）","type": "A","tooth": 12,"burst": 80,"height": 29.6,"exposure_height": 12.3,"weight": 2.3},{"name": "GN（ギヤニードル）","type": "D","tooth": 12,"burst": 30,"height": 29.4,"exposure_height": 12,"weight": 2},{"name": "GP（ギヤポイント）","type": "B","tooth": 12,"burst": 80,"height": 30,"exposure_height": 12.4,"weight": 2.3},{"name": "GR（ギヤラッシュ）","type": "A","tooth": 10,"burst": 80,"height": 29.7,"exposure_height": 12.3,"weight": 2.1},{"name": "H（ヘキサ）","type": "B","tooth": 16,"burst": 80,"height": 29.4,"exposure_height": 12.2,"weight": 2.6},{"name": "HN（ハイニードル）","type": "D","tooth": 12,"burst": 30,"height": 30.7,"exposure_height": 13.3,"weight": 2.2},{"name": "HT（ハイテーパー）","type": "B","tooth": 12,"burst": 80,"height": 30.6,"exposure_height": 13.3,"weight": 2.3},{"name": "K（キック）","type": "B","tooth": 12,"burst": 80,"height": 29.6,"exposure_height": 12.5,"weight": 2.2},{"name": "L（レベル）","type": "A","tooth": 16,"burst": 80,"height": 29.5,"exposure_height": 12.5,"weight": 2.6},{"name": "LF（ローフラット）","type": "A","tooth": 12,"burst": 80,"height": 28.7,"exposure_height": 11.3,"weight": 2.2},{"name": "LO（ローオーブ）","type": "S","tooth": 12,"burst": 30,"height": 28.5,"exposure_height": 11.2,"weight": 1.9},{"name": "LR（ローラッシュ）","type": "A","tooth": 10,"burst": 80,"height": 28.7,"exposure_height": 11.3,"weight": 1.9},{"name": "MN（メタルニードル）","type": "D","tooth": 12,"burst": 30,"height": 29.7,"exposure_height": 12.4,"weight": 2.8},{"name": "N（ニードル）","type": "D","tooth": 12,"burst": 30,"height": 29.4,"exposure_height": 12.3,"weight": 2},{"name": "O（オーブ）","type": "S","tooth": 12,"burst": 30,"height": 29.8,"exposure_height": 12.3,"weight": 2},{"name": "P（ポイント）","type": "B","tooth": 12,"burst": 80,"height": 29.8,"exposure_height": 12.4,"weight": 2.2},{"name": "Q（クエイク）","type": "A","tooth": 12,"burst": 80,"height": 29.6,"exposure_height": 12.3,"weight": 2.2},{"name": "R（ラッシュ）","type": "A","tooth": 10,"burst": 80,"height": 29.7,"exposure_height": 12.3,"weight": 2.1},{"name": "RA（ラバーアクセル）","type": "A","tooth": 16,"burst": 80,"height": 30,"exposure_height": 12.3,"weight": 3.1},{"name": "S（スパイク）","type": "D","tooth": 12,"burst": 30,"height": 29.8,"exposure_height": 12.3,"weight": 2},{"name": "T（テーパー）","type": "B","tooth": 12,"burst": 80,"height": 29.7,"exposure_height": 12.3,"weight": 2.2},{"name": "TP（トランスポイント）","type": "B","tooth": 12,"burst": 80,"height": 28.6,"exposure_height": 11.5,"weight": 2.2,"annotation":"延長時13.0"},{"name": "U（ユナイト）","type": "B","tooth": 12,"burst": 80,"height": 29.3,"exposure_height": 12.3,"weight": 2.1},{"name": "UN（アンダーニードル）","type": "D","tooth": 12,"burst": 30,"height": 27.5,"exposure_height": 10.2,"weight": 1.9},{"name": "V（ボルテックス）","type": "A","tooth": 12,"burst": 80,"height": 29.4,"exposure_height": 12.3,"weight": 2.1},{"name": "W（ウェッジ）","type": "D","tooth": 10,"burst": 30,"height": 29.7,"exposure_height": 12.7,"weight": 1.9},{"name": "Z（ザップ）","type": "B","tooth": 16,"burst": 80,"height": 28.8,"exposure_height": 11.5,"weight": 2.5}]
+
+const bey_types = {"A":"アタック","B":"バランス","D":"ディフェンス","S":"スタミナ"};
+const turn_types = {"L":"みぎ","R":"ひだり"}
 
 document.addEventListener('DOMContentLoaded', () => {
     const tableConfigs = [
         {
             id: 'bladeTable',
             data: blade_data,
-            headers: ['name', 'height', 'weight', 'annotation'],
+            headers: ['name', 'type', 'size', 'weight', 'turn', 'annotation'],
             displayNames: {
                 'name': '名前(なまえ)',
-                'height': '高さ(たかさ)',
+                'type': 'タイプ',
+                'size': '大きさ(おおきさ)',
                 'weight': '重さ(おもさ)',
+                'turn' : '回転(かいてん)',
                 'annotation': '注釈(ちゅうしゃく)'
             },
             initialSort: { key: 'name', order: 'asc' },
@@ -32,11 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 'bitsTable',
             data: bits_data,
-            headers: ['name', 'tooth', 'burst_resistance', 'height', 'exposure_height', 'weight', 'annotation'],
+            headers: ['name', 'type', 'tooth', 'burst', 'height', 'exposure_height', 'weight', 'annotation'],
             displayNames: {
                 'name': '名前(なまえ)',
+                'type': 'タイプ',
                 'tooth': '歯数(はのかず)',
-                'burst_resistance': 'バースト耐性(たいせい)',
+                'burst': 'バースト耐性(たいせい)',
                 'height': '高さ(たかさ)',
                 'exposure_height': '露出高さ(ろしゅつたかさ)',
                 'weight': '重さ(おもさ)',
@@ -60,7 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalBurstResistanceSpan = document.getElementById('totalBurstResistance');
     const ratchetToothCountSpan = document.getElementById('ratchetToothCount');
     const bitToothCountSpan = document.getElementById('bitToothCount');
+    const turnTypeSpan = document.getElementById('turnType');
+    const totalTypeSpan = document.getElementById('totalType');
     const resetButton = document.getElementById('resetSelection');
+    const selectedBlade = document.getElementById('selectedBlade');
+    const selectedTotalName = document.getElementById('selectedTotalName');
 
     // 変更点: 新しい要素の参照を追加
     const selectionResultsContainer = document.getElementById('selectionResultsContainer');
@@ -91,18 +101,26 @@ document.addEventListener('DOMContentLoaded', () => {
         let totalBurstResistance = 0;
         let ratchetTooth = 0;
         let bitTooth = 0;
+        let selectedBladeName = "";
+        let bitEnName = "";
+        let bitJpName = "";
 
         // Blade
         if (selectedParts.blade) {
-            selectedBladeSpan.textContent = `${selectedParts.blade.name} (${selectedParts.blade.height}mm, ${selectedParts.blade.weight}g)`;
+            selectedBladeName += selectedParts.blade.name;
+            selectedBladeSpan.textContent = `${bey_types[selectedParts.blade.type]} ${selectedParts.blade.size}mm, ${selectedParts.blade.weight}g`;
             totalWeight += selectedParts.blade.weight;
-            totalHeight += selectedParts.blade.height;
+            turnTypeSpan.textContent = turn_types[selectedParts.blade.turn]
+            //totalHeight += selectedParts.blade.height;
         } else {
+            selectedTotalName.textContent = '----'
+            turnTypeSpan.textContent = '----';
             selectedBladeSpan.textContent = '----';
         }
 
         // Ratchet
         if (selectedParts.ratchet) {
+            selectedBladeName += selectedParts.ratchet.name;
             selectedRatchetSpan.textContent = `${selectedParts.ratchet.name} (${selectedParts.ratchet.weight}g)`;
             totalWeight += selectedParts.ratchet.weight;
             totalHeight += selectedParts.ratchet.height;
@@ -113,15 +131,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Bit
         if (selectedParts.bit) {
-            selectedBitSpan.textContent = `${selectedParts.bit.name} (${selectedParts.bit.exposure_height}mm, ${selectedParts.bit.weight}g)`;
+            let bit_names = selectedParts.bit.name.split("（");
+            bitEnName = bit_names[0];
+            bitJpName = bit_names[1].replace('）',"");
+            selectedBitSpan.textContent = `${bitJpName} (${selectedParts.bit.exposure_height}mm, ${selectedParts.bit.weight}g)`;
             totalWeight += selectedParts.bit.weight;
             totalHeight += selectedParts.bit.exposure_height;
-            totalBurstResistance = selectedParts.bit.burst_resistance;
+            totalBurstResistance = selectedParts.bit.burst;
             bitTooth = selectedParts.bit.tooth;
+            totalType.textContent = bey_types[selectedParts.bit.type]
+            selectedBladeName += bitEnName;
         } else {
+            totalType.textContent = '----';
             selectedBitSpan.textContent = '----';
         }
+        if (selectedBladeName === ''){
+            selectedBladeName = "----";
+        }
 
+        selectedTotalName.textContent = selectedBladeName;
         totalWeightSpan.textContent = totalWeight.toFixed(1);
         totalHeightSpan.textContent = totalHeight.toFixed(1);
         totalBurstResistanceSpan.textContent = totalBurstResistance;
@@ -241,7 +269,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
             headers.forEach(header => {
                 const cell = document.createElement('td');
-                cell.textContent = item[header] !== undefined ? item[header] : '';
+                
+                if(header == 'type'){
+                    cell.textContent = bey_types[item[header]];
+                }else if(header == 'turn'){
+                    cell.textContent = turn_types[item[header]];
+                }else{
+                    cell.textContent = item[header] !== undefined ? item[header] : '';    
+                }
+                console.log(cell.textContent);
                 row.appendChild(cell);
             });
 
