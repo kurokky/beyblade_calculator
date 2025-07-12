@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
             data: blade_data,
             headers: ['name', 'height', 'weight', 'annotation'],
             displayNames: {
-                'name': 'なまえ',
-                'height': 'たかさ',
-                'weight': 'おもさ',
-                'annotation': 'じょうほう'
+                'name': '名前(なまえ)',
+                'height': '高さ(たかさ)',
+                'weight': '重さ(おもさ)',
+                'annotation': '注釈(ちゅうしゃく)'
             },
             initialSort: { key: 'name', order: 'asc' },
             type: 'blade'
@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
             data: ratchet_data,
             headers: ['name', 'tooth', 'height', 'weight'],
             displayNames: {
-                'name': 'なまえ',
-                'tooth': 'はのかず',
-                'height': 'たかさ',
-                'weight': 'おもさ'
+                'name': '名前(なまえ)',
+                'tooth': '歯数(はのかず)',
+                'height': '高さ(たかさ)',
+                'weight': '重さ(おもさ)'
             },
             type: 'ratchet'
         },
@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
             data: bits_data,
             headers: ['name', 'tooth', 'burst_resistance', 'height', 'exposure_height', 'weight', 'annotation'],
             displayNames: {
-                'name': 'なまえ',
-                'tooth': 'はのかず',
-                'burst_resistance': 'バーストたいせい',
-                'height': 'たかさ',
-                'exposure_height': 'ろしゅつたかさ',
-                'weight': 'おもさ',
-                'annotation': 'じょうほう'
+                'name': '名前(なまえ)',
+                'tooth': '歯数(はのかず)',
+                'burst_resistance': 'バースト耐性(たいせい)',
+                'height': '高さ(たかさ)',
+                'exposure_height': '露出高さ(ろしゅつたかさ)',
+                'weight': '重さ(おもさ)',
+                'annotation': '注釈(ちゅうしゃく)'
             },
             type: 'bit'
         }
