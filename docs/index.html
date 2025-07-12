@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ベイブレードX パーツ計算機</h1>
+    <h1>ベイブレードX パーツ<ruby><rb>計<rt>けい</rt></rb><rb>算<rt>さん</rt></rb><rb>機<rt>き</rt></rb></ruby></h1>
 
     <div class="tabs">
         <button class="tab-button active" data-tab="blade">ブレード</button>
@@ -20,10 +20,10 @@
         <table id="bladeTable">
             <thead>
                 <tr>
-                    <th data-sort-key="name">名前 <span class="sort-arrow"></span></th>
-                    <th data-sort-key="height">高さ <span class="sort-arrow"></span></th>
-                    <th data-sort-key="weight">重さ <span class="sort-arrow"></span></th>
-                    <th>注釈</th>
+                    <th data-sort-key="name"><ruby>名前(なまえ) <span class="sort-arrow"></span></th>
+                    <th data-sort-key="height">高さ(たかさ) <span class="sort-arrow"></span></th>
+                    <th data-sort-key="weight">重さ(おもさ) <span class="sort-arrow"></span></th>
+                    <th>注釈(ちゅうしゃく)</th>
                 </tr>
             </thead>
             <tbody>
@@ -69,15 +69,15 @@
     <div id="selectionResultsContainer" class="selection-results-container hidden">
         <button id="toggleSelectionResults" class="toggle-button">◀︎</button>
         <div class="selection-results-content">
-            <h2>選択されたパーツと総合計</h2>
+            <h2><ruby><rb>選<rt>せん</rt></rb><rb>択<rt>たく</rt></rb></ruby>したパーツと<ruby><rb>総<rt>そう</rt></rb><rb>合<rt>ごう</rt></rb><rb>計<rt>けい</rt></rb></ruby></h2>
             <p>ブレード: <span id="selectedBlade">----</span></p>
             <p>ラチェット: <span id="selectedRatchet">----</span></p>
             <p>ビット: <span id="selectedBit">----</span></p>
-            <p><strong>バースト耐性: <span id="totalBurstResistance">0</span></strong></p>
-            <p><strong>ラチェット歯数: <span id="ratchetToothCount">0</span></strong></p>
-            <p><strong>ビット歯数: <span id="bitToothCount">0</span></strong></p>
-            <p><strong>合計重量: <span id="totalWeight">0.0</span>g</strong></p>
-            <p><strong>合計高さ: <span id="totalHeight">0.0</span>mm</strong></p>
+            <p><strong>バースト<ruby><rb>耐<rt>たい</rt></rb><rb>性<rt>せい</rt></rb></ruby>: <span id="totalBurstResistance">0</span></strong></p>
+            <p><strong>ラチェット<ruby><rb>歯<rt>は</rt></rb><rb>数<rt>すう</rt></rb></ruby>: <span id="ratchetToothCount">0</span></strong></p>
+            <p><strong>ビット<ruby><rb>歯<rt>は</rt></rb><rb>数<rt>すう</rt></rb></ruby>: <span id="bitToothCount">0</span></strong></p>
+            <p><strong><ruby><rb>合計重量<rt>ごうけうじゅうりょう</rt></rb></ruby>: <span id="totalWeight">0.0</span>g</strong></p>
+            <p><strong><ruby><rb>合<rt>ごう</rt></rb><rb>計<rt>けい</rt></rb><rb>高<rt>たか</rt></rb></ruby>さ: <span id="totalHeight">0.0</span>mm</strong></p>
             <button id="resetSelection">リセット</button>
         </div>
     </div>
