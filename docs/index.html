@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <meta name="theme-color" content="#007bff">
     <link rel="shortcut icon" href="./images/favicon.ico" />
+
 </head>
 <body>
     <h1>ベイブレードX パーツ<ruby><rb>計<rt>けい</rt></rb><rb>算<rt>さん</rt></rb><rb>機<rt>き</rt></rb></ruby></h1>
@@ -89,7 +90,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js', { scope: '/' })
+                navigator.serviceWorker.register('/sw.js')
                     .then(registration => {
                         console.log('Service Worker registered with scope:', registration.scope);
                     })
