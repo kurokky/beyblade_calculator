@@ -20,7 +20,6 @@
     </div>
 
     <div id="blade" class="tab-content active">
-        <h2>ブレード</h2>
         <table id="bladeTable">
             <thead>
                 <tr>
@@ -36,7 +35,6 @@
     </div>
 
     <div id="ratchet" class="tab-content">
-        <h2>ラチェット</h2>
         <table id="ratchetTable">
             <thead>
                 <tr>
@@ -52,7 +50,6 @@
     </div>
 
     <div id="bits" class="tab-content">
-        <h2>ビット</h2>
         <table id="bitsTable">
             <thead>
                 <tr>
@@ -74,21 +71,20 @@
         <button id="toggleSelectionResults" class="toggle-button">◀︎</button>
         <div class="selection-results-content">
             <h2 id="selectedTotalName">----</h2>
-            <p>ブレード: <span id="selectedBlade">----</span></p>
-            <p>ラチェット: <span id="selectedRatchet">----</span></p>
-            <p>ビット: <span id="selectedBit">----</span></p>
-            <p><strong><ruby><rb>回転<rt>かいてん</rt></rb></ruby>: <span id="turnType"></span></strong></p>
-            <p><strong><ruby><rb>最終<rt>さいしゅう</rt></rb></ruby>タイプ: <span id="totalType">----</span></strong></p>
-            <p><strong>バースト<ruby><rb>耐<rt>たい</rt></rb><rb>性<rt>せい</rt></rb></ruby>: <span id="totalBurstResistance">0</span></strong></p>
-            <p><strong>ラチェット<ruby><rb>歯<rt>は</rt></rb><rb>数<rt>すう</rt></rb></ruby>: <span id="ratchetToothCount">0</span></strong></p>
-            <p><strong>ビット<ruby><rb>歯<rt>は</rt></rb><rb>数<rt>すう</rt></rb></ruby>: <span id="bitToothCount">0</span></strong></p>
-            <p><strong><ruby><rb>合計重量<rt>ごうけうじゅうりょう</rt></rb></ruby>: <span id="totalWeight">0.0</span>g</strong></p>
-            <p><strong><ruby><rb>合<rt>ごう</rt></rb><rb>計<rt>けい</rt></rb><rb>高<rt>たか</rt></rb></ruby>さ: <span id="totalHeight">0.0</span>mm</strong></p>
-            <button id="resetSelection">リセット</button>
+            <p><strong>ブレード: <span id="selectedBlade">----</span></strong></p>
+            <p><strong>ラチェット: <span id="selectedRatchet">----</span></strong></p>
+            <p><strong>ビット: <span id="selectedBit">----</span></strong></p>
+            <p><strong><ruby><rb>回転<rt>かいてん</rt></rb></ruby> : <span id="turnType"></span></strong></p>
+            <p><strong>バースト<ruby><rb>耐<rt>たい</rt></rb><rb>性<rt>せい</rt></rb></ruby> : <span id="totalBurstResistance">0</span></strong></p>
+            <p><strong>ラチェット<ruby><rb>歯<rt>は</rt></rb><rb>数<rt>すう</rt></rb></ruby> : <span id="ratchetToothCount">0</span></strong></p>
+            <p><strong>ビット<ruby><rb>歯<rt>は</rt></rb><rb>数<rt>すう</rt></rb></ruby> : <span id="bitToothCount">0</span></strong></p>
+            <p><strong><ruby><rb>合計重量<rt>ごうけうじゅうりょう</rt></rb></ruby> : <span id="totalWeight">0.0</span>g</strong></p>
+            <p><strong>ブレードまでの<ruby><rb>高<rt>たか</rt></rb></ruby>さ : <span id="totalHeight">0.0</span>mm</strong></p>
+            <p style="text-align:center"><button id="resetSelection">リセット</button></p>
         </div>
     </div>
 
-    <script type="module" src="./script.mjs"></script>
+    <script src="./script.mjs"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {

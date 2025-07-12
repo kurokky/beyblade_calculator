@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   sodipodi:docname="hidari.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 84.666663 84.666669"
+   height="320"
+   width="320"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="25"
+     inkscape:window-x="1920"
+     inkscape:window-height="1027"
+     inkscape:window-width="1920"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="242.00369"
+     inkscape:cx="-308.1326"
+     inkscape:zoom="0.71073297"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="レイヤー 1">
+    <path
+       id="path3"
+       style="color:#000000;fill:#000000;stroke-width:1.10832;stroke-linejoin:round;stroke-miterlimit:33.2;-inkscape-stroke:none"
+       d="m 26.368647,2.1903508 2.684425,4.6494905 C 34.132927,4.9485507 39.451589,4.1977055 44.669929,4.5213959 54.708437,5.1440781 64.372485,9.7246559 71.239262,17.72187 82.226106,30.517413 83.484655,49.071165 74.324031,63.23166 65.163409,77.392157 47.724572,83.851112 31.549639,79.075322 15.374706,74.299532 4.2420465,59.405019 4.2420465,42.539769 h 8.7972605 c 0,13.004742 8.529302,24.417091 21.001744,28.09969 C 46.513493,74.322056 59.871977,69.373564 66.935706,58.45445 73.999434,47.535335 73.037635,33.320439 64.565715,23.453836 56.848174,14.465802 44.625792,11.115448 33.542768,14.61591 l 2.995995,5.189009 -20.461651,0.07044 z" />
+    <path
+       id="path6"
+       style="color:#000000;fill:#000000;-inkscape-stroke:none"
+       d="M 31.289822,22.55392 V 62.112745 H 57.610179 V 54.327174 H 39.60611 V 22.55392 Z" />
+  </g>
+</svg>

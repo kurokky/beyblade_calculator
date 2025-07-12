@@ -17,7 +17,7 @@ h1 {
 
 .tabs {
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     margin-bottom: 0px;
 }
 
@@ -27,9 +27,13 @@ h1 {
     background-color: #e0e0e0;
     cursor: pointer;
     font-size: 12px;
-    margin: 0 5px;
+    margin: 0 2px;
     border-radius: 5px 5px 0 0;
     transition: background-color 0.3s ease;
+}
+
+.tab-button:first-of-type{
+    margin:0 2px 0 0;
 }
 
 .tab-button:hover {
@@ -39,14 +43,12 @@ h1 {
 .tab-button.active {
     background-color: #007bff;
     color: white;
-    border-bottom: 3px solid #0056b3;
 }
 
 .tab-content {
     display: none;
     background-color: #fff;
-    padding:16px;
-    border-radius:8px;
+    padding:0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -56,8 +58,12 @@ h1 {
 
 h2 {
     color: #007bff;
-    margin: 0;
+    margin:0;
     font-size:14px;
+}
+
+.tab-content h2{
+    margin:4px 8px;   
 }
 
 table {
@@ -69,7 +75,7 @@ table {
 th, td {
     border: 1px solid #ddd;
     padding: 4px 8px;
-    text-align: left;
+    text-align: center;
 }
 
 th {
@@ -117,7 +123,7 @@ tbody tr.selected {
 /* 変更点: selection-results-container のスタイル */
 .selection-results-container {
     position: fixed; /* 画面に固定 */
-    bottom: 20px;    /* 下から20px */
+    bottom: 8px;    /* 下から20px */
     right: 20px;     /* 右から20px */
     z-index: 1000;   /* 他の要素の上に表示 */
     display: flex;   /* ボタンと内容を横並びにするため */
@@ -126,14 +132,14 @@ tbody tr.selected {
 
 /* 非表示時の状態 */
 .selection-results-container.hidden {
-    transform: translateX(calc(100% - 40px)); /* ボタン幅を考慮して非表示 */
+    transform: translateX(calc(100% - 20px)); /* ボタン幅を考慮して非表示 */
 }
 
 .selection-results-content {
-    padding:16px;
+    padding:8px;
     background-color: #e6f7ff;
     border: 1px solid #99e6ff;
-    border-radius:0px 8px 8px 8px;
+    border-radius:8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     min-width: 250px; /* ある程度の幅を確保 */
 }
@@ -147,12 +153,17 @@ tbody tr.selected {
     font-size:12px;
 }
 
+#selectedTotalName{
+    text-align:center;
+}
+
 #resetSelection {
-    padding: 8px 15px;
-    margin-top: 10px;
+    padding: 8px;
     background-color: #dc3545;
     color: white;
     border: none;
+    margin:8px 0 0 0;
+    width:50%;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -170,6 +181,7 @@ tbody tr.selected {
     padding: 8px 10px;
     cursor: pointer;
     font-size: 1.2em;
+    margin-top:30px;
     border-radius: 8px 0 0 8px; /* 左側にだけ丸み */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     height: fit-content; /* 内容に合わせた高さ */
@@ -179,4 +191,8 @@ tbody tr.selected {
 
 .toggle-button:hover {
     background-color: #0056b3;
+}
+
+img{
+    vertical-align:-2px;
 }
