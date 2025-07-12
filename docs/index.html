@@ -12,12 +12,67 @@
 </head>
 <body>
     <h1>ベイブレードX パーツ<ruby><rb>計<rt>けい</rt></rb><rb>算<rt>さん</rt></rb><rb>機<rt>き</rt></rb></ruby></h1>
+    
+    <div id="line"><button class="line-button active" data-line="basic">BX/UX</button><button class="line-button" data-line="cx">CX</button></div>
 
+    <div id="basic" class="line-tabs">
     <div class="tabs">
         <button class="tab-button active" data-tab="blade">ブレード</button>
         <button class="tab-button" data-tab="ratchet">ラチェット</button>
         <button class="tab-button" data-tab="bits">ビット</button>
     </div>
+    </div>
+    
+    <div id="cx" class="line-tabs">
+    <div class="tabs">
+        <button class="tab-button active" data-tab="lock">チップ</button>
+        <button class="tab-button" data-tab="mainBlade">メイン</button>
+        <button class="tab-button" data-tab="assistBlade">アシスト</button>
+        <button class="tab-button" data-tab="ratchet">ラチェット</button>
+        <button class="tab-button" data-tab="bits">ビット</button>
+    </div>
+    </div>
+
+
+    <div id="lock" class="tab-content">
+        <table id="lockTable">
+            <thead>
+                <tr>
+                    <th data-sort-key="name"><ruby>名前(なまえ) <span class="sort-arrow"></span></th>
+                    <th data-sort-key="weight">重さ(おもさ) <span class="sort-arrow"></span></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="mainBlade" class="tab-content">
+        <table id="mainBladeTable">
+            <thead>
+                <tr>
+                    <th data-sort-key="name"><ruby>名前(なまえ) <span class="sort-arrow"></span></th>
+                    <th data-sort-key="size"><ruby><rb>大</rb><rt>おお</rt></ruby>きさ <span class="sort-arrow"></span></th>
+                    <th data-sort-key="weight">重さ(おもさ) <span class="sort-arrow"></span></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="assistBlade" class="tab-content">
+        <table id="assistBladeTable">
+            <thead>
+                <tr>
+                    <th data-sort-key="name"><ruby>名前(なまえ) <span class="sort-arrow"></span></th>
+                    <th data-sort-key="size"><ruby><rb>大</rb><rt>おお</rt></ruby>きさ <span class="sort-arrow"></span></th>
+                    <th data-sort-key="weight">重さ(おもさ) <span class="sort-arrow"></span></th>
+                    <th data-sort-key="height">高さ(たかさ) <span class="sort-arrow"></span></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
 
     <div id="blade" class="tab-content active">
         <table id="bladeTable">
@@ -29,8 +84,7 @@
                     <th>注釈(ちゅうしゃく)</th>
                 </tr>
             </thead>
-            <tbody>
-                </tbody>
+            <tbody></tbody>
         </table>
     </div>
 
@@ -66,6 +120,8 @@
                 </tbody>
         </table>
     </div>
+
+
 
     <div id="selectionResultsContainer" class="selection-results-container hidden">
         <button id="toggleSelectionResults" class="toggle-button">◀︎</button>
