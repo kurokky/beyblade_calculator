@@ -13,6 +13,9 @@ const assist_data = [{"name":"J","yomi":"ジャギー","size":46,"weight":4.8,"h
 const bey_types = {"A":"アタック","B":"バランス","D":"ディフェンス","S":"スタミナ"};
 const turn_types = {"L":"ひだり","R":"みぎ"}
 
+const ignore_bits = ["Tr"] 
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const tableConfigs = [
         {
@@ -218,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Ratchet
         if (selectedParts.ratchet && !trClick) {
-            if ( selectedParts.bit && selectedParts.bit.name == "Tr"){
+            if ( selectedParts.bit && ignore_bits.includes(selectedParts.bit.name) ) {
                 selectedParts.bit = null;
                 selectedRatchetSpan.textContent = "----"
                 selectedBitSpan.textContent = '----';
@@ -248,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
             selectedBladeName += selectedParts.bit.name;
             if (trClick){
                 ratchetTooth = 3;
-                selectedRatchetSpan.textContent = "Tr"
+                selectedRatchetSpan.textContent = selectedParts.bit.name;
                 selectedParts.ratchet = null;
                 //ラチェットの選択をなくす
                 document.querySelectorAll('#ratchetTable tbody tr').forEach(row => {
@@ -416,10 +419,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 row.classList.add('selected');
 
                 selectedParts[type] = item;
-                let trClick = false;
-                if (item.name == "Tr"){
-                    trClick = true
-                }
+                let trClick = ignore_bits.includes(item.name)
                 updateSelectionDisplay(trClick);
             });
 
